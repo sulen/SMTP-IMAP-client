@@ -1,0 +1,16 @@
+<div hx-boost="true">
+    <div class="new-email-button">
+        <a class="item" href="/email/new">
+            New email
+        </a>
+    </div>
+    <div class="email-list">
+        {{#each emails}}
+            <a class="item" href="/email/{{id}}">
+                <div class="from">{{from}}</div>
+                <div class="subject">{{subject}}</div>
+                <div class="date">{{date}}</div>
+            </a>
+        {{/each}}
+    </div>
+</div>

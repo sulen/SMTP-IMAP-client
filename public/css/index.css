@@ -1,0 +1,45 @@
+* {
+}
+
+.email-list .item {
+  display: flex;
+}
+
+.email-list .item div {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 18px;
+  line-height: 32px;
+}
+
+.email-list .item .from {
+  width: 300px;
+}
+
+.email-list .item .subject {
+  width: 400px;
+}
+
+.email-list .item .date {
+  width: 300px;
+}
+
+.email-details .attachments {
+  margin-top: 10px;
+}
+
+.email-details .content {
+  margin-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+form > * {
+  margin-bottom: 20px;
+}
+

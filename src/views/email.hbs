@@ -1,0 +1,20 @@
+<div class="email-details">
+  <div class="from">{{from}}</div>
+  <div class="subject">{{subject}}</div>
+  <div class="date">{{date}}</div>
+  {{#if attachments}}
+    <div class="attachments">
+      <div class="attachment-header">Załączniki</div>
+      {{#each attachments}}
+        <div class="attachment">
+          <a download="{{fileName}}" href="{{content}}">
+            {{fileName}}
+          </a>
+        </div>
+      {{/each}}
+    </div>
+  {{/if}}
+  <div class="content">
+    {{{parsedBody}}}
+  </div>
+</div>

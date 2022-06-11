@@ -1,0 +1,27 @@
+<form hx-post="/api/email" hx-encoding="multipart/form-data">
+  <label>
+    <div>
+      Recipient:
+    </div>
+    <input type="email" name="to" />
+  </label>
+  <label>
+    <div>
+      Subject:
+    </div>
+    <input type="text" name="subject" />
+  </label>
+  <label>
+    <div>
+      Message:
+    </div>
+    <textarea name="content" id="content" cols="30" rows="10"></textarea>
+  </label>
+  <label>
+    <div>
+      Attachments:
+    </div>
+    <input type="file" name="attachment" multiple />
+  </label>
+  <button type="submit">Send</button>
+</form>
